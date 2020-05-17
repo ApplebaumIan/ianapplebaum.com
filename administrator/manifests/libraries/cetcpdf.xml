@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade" version="1.7.0">
+	<name>CETCPDF</name>
+	<libraryname>cetcpdf</libraryname>
+	<author>ChronoEngine.com</author>
+	<creationDate>2018</creationDate>
+	<copyright>Copyright (C) 2018</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@chronoengine.com</authorEmail>
+	<authorUrl>www.chronoengine.com</authorUrl>
+	<version>1.0.0</version>
+	<description>The TCPDF library for Chronoforms</description>
+	
+	<files>
+		<folder>tcpdf</folder>
+	</files>
+	<updateservers>
+		<server type="library" priority="1" name="CETCPDF update server">http://www.chronoengine.com/chrono_joomla_updates/cetcpdf.xml</server>
+	</updateservers>
+</extension>

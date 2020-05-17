@@ -1,0 +1,1 @@
+[18-Mar-2020 00:41:43 UTC] PHP Warning:  Use of undefined constant safe_mode_exec_dir - assumed 'safe_mode_exec_dir' (this will throw an Error in a future version of PHP) in /home/ianapplebaum/public_html/capstone/capstone_upload.php on line 5
