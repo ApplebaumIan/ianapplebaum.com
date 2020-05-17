@@ -2,7 +2,7 @@
 
 Still working on content. I'll be back here soon!
 
-## If you're interested in Joomla (All of this is straight from the [Joomla](https://www.joomla.org) README.md) 👇
+## If you're interested in Joomla (All of this is straight from the [Joomla](https://github.com/joomla/joomla-cms) README.md) 👇
 
 Install Joomla?
 ---------------------
