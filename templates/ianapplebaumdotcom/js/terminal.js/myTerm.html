@@ -1,0 +1,21 @@
+<div id="myterminal">
+  <p>
+    <span>$> </span>
+    <span contenteditable="true" class="input"></span>
+  </p>
+</div>
+<script src="terminal.js"></script>
+<script>
+var commands={
+  hi: function(){
+    return `<pre>
+                   __
+ /                /  |           /      /
+(  ___  ___      (___| ___  ___ (  ___ (___  ___       _ _
+| |   )|   )     |   )|   )|   )| |___)|   )|   )|   )| | )
+| |__/||  /      |  / |__/ |__/ | |__  |__/ |__/||__/ |  /
+                      |    |                               </pre>`
+  }
+}
+Terminal.init(document.getElementById('myterminal'),commands)
+</script>

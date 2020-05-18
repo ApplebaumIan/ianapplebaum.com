@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+    <name>ianapplebaumdotcom</name>
+    <version>1.0.7</version>
+    <creationDate>December 2015</creationDate>
+    <author>Valentín García</author>
+    <authorEmail>htmgarcia@gmail.com</authorEmail>
+    <authorUrl>http://www.htmgarcia.com</authorUrl>
+    <copyright>Copyright (C) Valentín García 2014</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+    <description>
+        <![CDATA[
+        Progressive. Joomla Premium Template. Info and Support: <a href="http://themeforest.net/user/htmgarcia" target="_blank">http://themeforest.net/user/htmgarcia</a>
+        <style>
+        .text label{ font-weight:bold; font-size:18px; }
+        </style>
+        ]]>
+    </description>
+    <files>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>includes</folder>
+        <filename>favicon.ico</filename>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>error.php</filename>
+        <filename>component.php</filename>
+        <filename>offline.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>LICENSE.txt</filename>
+    </files>
+    <positions>
+        <position>top</position>
+        <position>menu</position>
+        <position>slide</position>
+        <position>carousel</position>
+        <position>phone</position>
+        <position>search</position>
+        <position>heading-a</position>
+        <position>heading-b</position>
+        <position>heading-c</position>
+        <position>heading-d</position>
+        <position>bodytop-a</position>
+        <position>bodytop-b</position>
+        <position>bodytop-c</position>
+        <position>bodytop-d</position>
+        <position>bodybottom-a</position>
+        <position>bodybottom-b</position>
+        <position>bodybottom-c</position>
+        <position>bodybottom-d</position>
+        <position>inner-a</position>
+        <position>inner-b</position>
+        <position>inner-c</position>
+        <position>inner-d</position>
+        <position>showcase</position>
+        <position>user-a</position>
+        <position>user-b</position>
+        <position>user-c</position>
+        <position>user-d</position>
+        <position>bodyright</position>
+        <position>bodyleft</position>
+        <position>box</position>
+        <position>karma</position>
+        <position>team</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>bottom-c</position>
+        <position>bottom-d</position>
+        <position>footer-a</position>
+        <position>footer-b</position>
+        <position>footer-c</position>
+        <position>footer-d</position>
+        <position>footer-e</position>
+        <position>footer-f</position>
+    </positions>
+    <languages>
+        <language tag="en-GB">en-GB.tpl_ianapplebaumdotcom.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="BASIC">
+                <field name="vg_logo_type" type="radio" class="btn-group" default="image" label="Logo type" description="Choose image or text as logo">
+                    <option value="image">Image</option>
+                    <option value="text">Text</option>
+                </field>
+                <field name="vg_logo_image" type="media" label="Logo Image" description="Only when Logo type is set as Image" />
+                <field name="vg_logo_text" type="textarea" filter="raw" label="Logo Text (HTML)" description="Only when Logo type is set as Text" default="" />
+                <field name="vg_analytics" type="textarea" label="Google analytics script" description="Add your Google analytics here." default="" cols="35" rows="5" />
+                <field name="vg_css" type="textarea" label="Custom CSS" description="Set/Change your custom CSS class" default="" cols="35" rows="5" />
+                <field name="vg_copy" type="textarea" default="" filter="raw" label="Footer content (HTML)" description="Copyright Info" cols="35" rows="5" />
+                <field name="vg_top" type="radio" class="btn-group btn-group-yesno" default="1" label="Display Go Top Button" description="Enabled the Go Top link">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="vg_color" type="color" default="#c10841" label="Color scheme" description="Choose main color scheme."/>
+                <field name="vg_color_preview" type="radio" class="btn-group btn-group-yesno" default="0" label="Color preview" description="To use custom color override in URL like ?color=ff0000">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="vg_layout" type="radio" class="btn-group btn-group-yesno" default="fullwidth" label="Layout" description="Choose the layout type">
+                    <option value="fullwidth">Full width</option>
+                    <option value="boxed">Boxed</option>
+                </field>
+                <field name="vg_bodybg" type="media" label="Boxed Background" description="Set a background image for the complete site" />
+            </fieldset>
+            <fieldset name="FONTS">
+                <field name="vg_fontlink_1" type="text" label="1) Google font link" description="Add your Google font link here. EXAMPLE: http://fonts.googleapis.com/css?family=Open+Sans:400,600" default="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic" />
+                <field name="vg_fontfamily_1" type="text" label="1) Google font family" description="Add your Google font family here. EXAMPLE: 'Open Sans',Arial,sans-serif" default="'Arimo   ', sans-serif" />
+            </fieldset>
+            <fieldset name="HEADER">
+                <field name="vg_searchpos" type="radio" class="btn-group btn-group-yesno" default="1" label="Enable 'search' position" description="In order to show/hide Search position">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="vg_phonepos" type="radio" class="btn-group btn-group-yesno" default="1" label="Enable 'phone' position" description="In order to show/hide Phone position">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            <fieldset name="SECTIONS">
+                <field type="spacer" name="vg_bodybottom_label" label="Body Bottom" class="text" />
+                <field name="vg_bodybottom_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_bodybottom_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_bodybottom_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+                <field type="spacer" name="vg_bodybottom_hr" hr="true" />
+                <field type="spacer" name="vg_inner_label" label="Inner" class="text" />
+                <field name="vg_inner_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_inner_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_inner_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+                <field type="spacer" name="vg_inner_hr" hr="true" />
+                <field type="spacer" name="vg_showcase_label" label="Showcase" class="text" />
+                <field name="vg_showcase_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_showcase_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_showcase_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+                <field type="spacer" name="vg_showcase_hr" hr="true" />
+                <field type="spacer" name="vg_user_label" label="User" class="text" />
+                <field name="vg_user_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_user_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_user_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+                <field type="spacer" name="vg_box_hr" hr="true" />
+                <field type="spacer" name="vg_box_label" label="Box" class="text" />
+                <field name="vg_box_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_box_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_box_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+                <field type="spacer" name="vg_karma_hr" hr="true" />
+                <field type="spacer" name="vg_karma_label" label="Karma" class="text" />
+                <field name="vg_karma_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_karma_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_karma_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+                <field type="spacer" name="vg_team_hr" hr="true" />
+                <field type="spacer" name="vg_team_label" label="Team" class="text" />
+                <field name="vg_team_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_team_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_team_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+                <field type="spacer" name="vg_bottom_hr" hr="true" />
+                <field type="spacer" name="vg_bottom_label" label="Bottom" class="text" />
+                <field name="vg_bottom_img" type="media" label="Background Image" description="Choose an image to display as background, recommended size 1920 x 1600" />
+                <field name="vg_bottom_video" type="textarea" label="Video Embed (HTML)" description="Add custom embed for video" default="" cols="35" rows="5" filter="raw" />
+                <field name="vg_bottom_hex" type="color" default="#fff" label="Background Color" description="Choose a background color. Note: Background image has priority over Background Color if is setup." />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
