@@ -747,3 +747,4 @@ templates/belchim
 # /web.config.txt
 !/tmp/
 !/components/com_community_services_directory/index.html
+data/*
