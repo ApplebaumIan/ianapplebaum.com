@@ -15,14 +15,13 @@
 *.bak
 *.temp
 *.dup
-
 devnote*
 ._*
 .DS_Store
 .idea/*
 # JOOMLA INSTALL
 /video/*
-# /.htaccess
+/.htaccess
 /administrator/cache/*
 /administrator/components/com_actionlogs/*
 /administrator/components/com_admin/*
